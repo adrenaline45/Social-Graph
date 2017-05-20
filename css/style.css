@@ -1,0 +1,47 @@
+body {
+	color: #414141
+}
+
+#logo {
+	transform: scale(0.7, 0.7);
+}
+
+select {
+	border: 1px solid #414141;
+}
+
+select:focus {
+	border: 1px solid #414141;
+	outline: none;
+}
+
+.card-image img {
+	width: 200px;
+	height: 200px;
+}
+
+a {
+	cursor: pointer;
+}
+
+.node {
+	fill: #ccc;
+	stroke: #fff;
+	stroke-width: 2px;
+	width: 100px;
+}
+
+.link {
+	stroke: #777;
+	stroke-width: 2px;
+}
+
+@media screen and (max-width: 1000px) {
+	.row .col.s6 {
+		width: 90% !important;
+	}
+
+	.row .col.s3 {
+		width: 5% !important;
+	}
+}

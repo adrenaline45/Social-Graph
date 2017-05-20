@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>index</title>
+	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+	<!--Logo-->
+	<div class="row">
+		<div class="col s12">
+			<a href="index.html"><img src="images/logo.png" alt="30Hills logo" id="logo"></a>
+		</div>
+	</div>
+
+	<!--Select input-->
+	<div class="row">
+		<div class="col s3"></div>
+    	<div class="col s6">
+    		<label>Select user:</label>   	
+    		<select class="browser-default" id="list-user"></select>	  		
+  		</div>
+  		<div class="col s3"></div>
+  	</div>
+
+	<!--Profile card-->
+	<div class="row">
+		<div class="col s3"></div>
+		<div class="col s6">
+	    	<div class="card horizontal">
+	      		<div class="card-image">
+	        		<img src="images/user.png">
+	      		</div>
+	      		<div class="card-stacked">
+	        		<div class="card-content" id="profile-div"></div>
+	      		<div class="card-action">
+	          		<a id="friends">Friends</a>
+	          		<a id="friends-of-friends">Friends of friends</a>
+	          		<a id="friends-suggested">Suggested</a>
+	        	</div>
+	      		</div>
+	    	</div>
+		</div>
+		<div class="col s3"></div>
+	</div>
+
+	<!--Social graph-->
+	<div class="row">
+		<div class="col s3"></div>
+		<div class="col s6" id="graph-div"></div>
+		<div class="col s3"></div>
+	</div>
+
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+	<script src="js/script.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('select').material_select(); 
+		});
+	</script>
+</body>
+</html>
